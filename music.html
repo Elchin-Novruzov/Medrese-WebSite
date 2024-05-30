@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medrese</title>
+  <link rel="stylesheet" href="assets/main.css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/main.css/bootstrap.css.map" />
+  <link rel="stylesheet" href="assets/main.css/style.css" />
+  <link rel="stylesheet" href="assets/main.css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/main.css/plyr.css">
+</head>
+
+<body class="body">
+  <header class="header-top">
+    <div class="container ht-top d-flex align-items-center justify-content-between">
+      <div class="ht-left">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="ht-right">
+        <label for="lang" id="label">
+          <img src="./assets/img/27134 2.png" alt="" /></label>
+        <select id="lang">
+          <option value="tr">Türkçe</option>
+          <option value="en">en</option>
+          <option value="ru">ru</option>
+        </select>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container hm-container d-flex">
+          <div class="hm-logo">
+              <a href="index.html"> <img src="./assets/img/medrese_TR 1.png" alt=""> </a>
+          </div>
+          <nav>
+              <ul>
+                  <li class="active-li nav-list">
+                      <a class="nav-link active" href="index.html"><i class="fa-solid fa-house"></i> Ana Sayfa </a>
+                  </li>
+                  <li class="nav-list">
+                      <a class="nav-link" href="music.html"> <i class="fa-solid fa-microphone"></i> Podcastlar </a>
+                  </li>
+                  <li class="nav-list">
+                      <a class="nav-link" href="galary.html"> <i class="fa-solid fa-image"></i> Resimler</a>
+                  </li>
+                  <li class="nav-list">
+                      <a class="nav-link" href="story.html"><i class="fa-solid fa-layer-group"></i>
+                          Durumlar
+                      </a>
+                  </li>
+                  <li class="nav-list">
+                      <a class="nav-link" href="index2.html"> <i class="fa-solid fa-circle-play"></i>Videolar</a>
+                  </li>
+                  <li class="nav-list blog-open">
+                      <a class="nav-link" href="blog.html"> <i class="fa-solid fa-list"></i> Blog</a>
+
+                      <div class="dropdown">
+                          <ul>
+                              <li><a href="#"> Fringilla urna </a></li>
+                              <li><a href="#"> Fringilla urna </a></li>
+                              <li><a href="#"> Fringilla urna </a></li>
+                              <li><a href="#"> Fringilla urna </a></li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+          </nav>
+          <div class="open-menu">
+              <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+      </div>
+  </div>
+  </header>
+
+  <main class="music-main">
+    <section class="music-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="music-player">
+              <div class="music-name">
+                <div class="music-top">
+                  <i class="fa-solid fa-play fs-4 top-i"></i>
+                  <p style="color: white" id="title"> Şarkı 1 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="music-list-item">
+      <div class="container">
+        <div class="container">
+          <audio controls id="plyrlist">
+            <source src="./assets/audio/music1.mp3" type="audio/mp3">
+          </audio>
+          <ul class="d-flex justify-content-between player-area">
+            <li onclick="changeName1()" class="player-src w-100" data-type="mp3" data-src="assets/audio/1.mp3">
+              <div class="d-flex align-items-center">
+                <span>1.</span>
+                <p>Şarkı 1</p>
+              </div>
+              <div class="icon-flex-item">
+                <i class="fa-solid fa-play fs-5 top-i"></i>
+              </div>
+            </li>
+            <i class="fa-solid fa-download"></i>
+          </ul>
+          <ul class="d-flex justify-content-between player-area">
+            <li onclick="changeName2()" class="player-src w-100" data-type="mp3" data-src="assets/audio/2.mp3">
+              <div class="d-flex align-items-center">
+                <span>2.</span>
+                <p >Şarkı 2</p>
+              </div>
+              <div class="icon-flex-item">
+                <i class="fa-solid fa-play fs-5 top-i"></i>
+              </div>
+            </li>
+            <i class="fa-solid fa-download"></i>
+          </ul>
+          <ul class="d-flex justify-content-between player-area">
+            <li onclick="changeName3()" class="player-src w-100" data-type="mp3" data-src="assets/audio/3.mp3">
+              <div class="d-flex align-items-center">
+                <span>3.</span>
+                <p>Şarkı 3</p>
+              </div>
+              <div class="icon-flex-item">
+                <i class="fa-solid fa-play fs-5 top-i"></i>
+              </div>
+            </li>
+            <i class="fa-solid fa-download"></i>
+          </ul>
+        </div>
+    </section>
+    <section class="music-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="music-title">
+              Dolor sit amet, consectetur adipiscing elit <br />
+              ut aliquam, purus sit
+            </h3>
+            <p class="music-dec">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel fringilla est ullamcorper eget nulla facilisi
+              etiam dignissim diam quis enim lobortis scelerisque fermentum
+              dui faucibus in ornare quam viverra orci sagittis eu volutpat
+              odio facilisis mauris sit amet massa vitae tortor condimentum
+              lacinia quis vel eros donec ac odio tempor orci dapibus ultrices
+              in iaculis nunc sed augue lacus, viverra vitae congue eu,
+              consequat ac felis donec et odio pellentesque diam volutpat
+              commodo sed egestas egestas fringilla phasellus faucibus massa
+              vitae tortor condimentum lacinia quis vel eros donec
+            </p>
+
+            <h3 class="music-title2">
+              Adipiscing elit ut aliquam, purus sit
+            </h3>
+            <p class="music-dec">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel fringilla est ullamcorper eget nulla facilisi
+              etiam dignissim diam quis enim lobortis scelerisque fermentum
+              dui faucibus in ornare quam viverra orci sagittis eu volutpat
+              odio facilisis mauris sit amet massa vitae tortor condimentum
+              lacinia quis vel eros donec ac odio tempor orci dapibus ultrices
+              in iaculis nunc sed augue lacus, viverra vitae congue eu,
+              consequat ac felis donec et odio pellentesque diam volutpat
+              commodo sed egestas egestas fringilla phasellus faucibus massa
+              vitae tortor condimentum lacinia quis vel eros donec
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="podcast" class="music-podcast">
+      <div class=" container podcast-music">
+        <div class="p-title text-start">
+          <span class="ms-title">Benzer Sesli Kitaplar</span>
+        </div>
+        <div class="podcast-slider container podcast-music">
+          <div class="swiper swiper-container9">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-index swiper-music">
+                <a href="#">
+                  <img class="pod-img" src="./assets/img/book-g558c2ce9b_1920 1.png" alt="">
+                  <div class="pot-text">
+                    <span>Lectus magna fringilla </span>
+                    <p>Venenatis, lectus magna fringilla urna</p>
+                    <div class="icon-pot">
+                      <i class="fa-solid fa-headphones"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-index swiper-music">
+                <a href="#">
+                  <img class="pod-img " src="./assets/img/ramadan-g90c0a7b2e_1920 1.png" alt="">
+                  <div class="pot-text">
+                    <span>Lectus magna fringilla </span>
+                    <p>Venenatis, lectus magna fringilla urna</p>
+                    <div class="icon-pot">
+                      <i class="fa-solid fa-headphones"></i>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-index swiper-music">
+                <a href="#">
+                  <img class="pod-img" src="./assets/img/book-g558c2ce9b_1920 1.png" alt="">
+                  <div class="pot-text">
+                    <span>Lectus magna fringilla </span>
+                    <p>Venenatis, lectus magna fringilla urna</p>
+                    <div class="icon-pot">
+                      <i class="fa-solid fa-headphones"></i>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-index swiper-music">
+                <a href="#">
+                  <img class="pod-img" src="./assets/img/podcast2.png" alt="">
+                  <div class="pot-text">
+                    <span>Lectus magna fringilla </span>
+                    <p>Venenatis, lectus magna fringilla urna</p>
+                    <div class="icon-pot">
+                      <i class="fa-solid fa-headphones"></i>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-index swiper-music">
+                <a href="#">
+                  <img class="pod-img" src="./assets/img/book-g558c2ce9b_1920 1.png" alt="">
+                  <div class="pot-text">
+                    <span>Lectus magna fringilla </span>
+                    <p>Venenatis, lectus magna fringilla urna</p>
+                    <div class="icon-pot">
+                      <i class="fa-solid fa-headphones"></i>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mobil-menu">
+      <nav>
+        <ul>
+          <li><a href="index.html"> Ana Sayfa </a></li>
+          <li><a href="podcast.html"> Podcastlar </a></li>
+          <li><a href="galary.html"> Resimler</a></li>
+          <li><a href="durumlar.html"> Durumlar </a></li>
+          <li><a href="video.html"> Videolar </a></li>
+          <li><a class="op-mobil" href="#"> Blog <i class="fa-solid fa-angle-right blog-arrow"></i>
+              <ul class="blog-mobil">
+                <li><a href="#"> Fringilla urna </a></li>
+                <li><a href="#"> Fringilla urna </a></li>
+                <li><a href="#"> Fringilla urna </a></li>
+                <li><a href="#"> Fringilla urna </a></li>
+              </ul>
+            </a></li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="f-row row">
+        <div class="col-lg-4 col-12">
+          <div class="footer-left">
+            <img src="./assets/img/medrese_TR 1.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+            </p>
+            <div class="footer-link">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-12">
+          <div class="footer-nav">
+            <ul>
+              <span>Lectus magna</span>
+              <li><a href="#">Porttitor rhoncus </a></li>
+              <li><a href="#">Porttitor rhoncus </a></li>
+              <li><a href="#">Porttitor rhoncus </a></li>
+              <li><a href="#">Porttitor rhoncus </a></li>
+              <li><a href="#">Porttitor rhoncus </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-12">
+          <div class="footer-nav">
+            <ul>
+              <span>Lectus magna</span>
+              <li><a href="#">Porttitor rhoncus </a></li>
+              <li><a href="#">Porttitor rhoncus </a></li>
+              <li><a href="#">Porttitor rhoncus </a></li>
+              <li><a href="#">Porttitor rhoncus </a></li>
+              <li><a href="#">Porttitor rhoncus </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 form-col">
+          <form action="" class="position-relative">
+            <ul>
+              <li><span> Lectus magna </span></li>
+              <li class="inp">
+                <input type="text" placeholder="E-posta Adresi " />
+                <button type="submit">Gönder</button>
+              </li>
+              <li style="margin-top: 30px">
+                <img src="./assets/img/image 6.png" alt="" />
+                <img src="./assets/img/image 8.png" alt="" />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js/swiper-bundle.min.js"></script>
+  <script src="assets/main.js/jquery.min.js"></script>
+  <script src="assets/main.js/plyr.js"></script>
+  <script>
+      const musicObj = {
+      music_name1:"Şarkı 1",
+      music_name2:"Şarkı 2",
+      music_name3:"Şarkı 3"
+    }
+
+     const title_music = document.querySelector('#title')
+
+      function changeName1(){
+     title_music.innerHTML = musicObj.music_name1
+    }
+      function changeName2(){
+     title_music.innerHTML = musicObj.music_name2
+    }
+
+    function changeName3(){
+     title_music.innerHTML = musicObj.music_name3
+    }
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const player = new Plyr('#plyrlist');
+      window.player = player;
+      function on(selector, type, callback) {
+        document.querySelector(selector).addEventListener(type, callback, false);
+      }
+    });
+
+    $(document).ready(() => {
+      $('.player-src').on('click', function () {
+        src = $(this).data("src");
+        type = 'audio/' + $(this).data("type");
+        player.source = {
+          type: 'audio',
+          sources: [
+            {
+              src: src,
+              type: type,
+            }
+          ],
+
+        };
+
+        player.play();
+      });
+    })
+
+    var swiper9 = new Swiper(".swiper-container9", {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        1100: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1400: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    const mobil_menu = document.querySelector(".mobil-menu");
+    const open_menu = document.querySelector(".open-menu");
+    const body = document.querySelector(".body");
+    const blogMobil = document.querySelector(".blog-mobil");
+    const opBlog = document.querySelector(".op-mobil");
+    const blogArrow = document.querySelector(".blog-arrow");
+
+    opBlog.addEventListener("click", () => {
+      blogMobil.classList.toggle("active");
+      blogMobil.classList.toggle("actives");
+      blogArrow.classList.toggle("active");
+    });
+
+    open_menu.addEventListener("click", function () {
+      mobil_menu.classList.toggle("active");
+      body.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>
